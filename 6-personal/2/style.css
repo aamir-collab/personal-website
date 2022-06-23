@@ -1,0 +1,328 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 0;
+    text-align: center;
+}
+.nav li{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+.nav li a{
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    font-family: 'Oxygen-mono', monospace;
+}
+.nav li a:hover{
+    color: lightgray;
+}
+header{
+    height: 65vh;
+    background-image: url(https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2011/01/apple-mac-laptop-mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+header h1{
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    font-family: 'Oxygen', sans-serif;
+    margin-top: 15vh;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.social li{
+    display: inline-block;
+}
+.social li a i{
+    font-size: 1.2rem;
+    padding: 10px;
+    color: white;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.social li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.2);
+}
+.about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+#image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-bottom: -10vh;
+}
+#image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    margin-top: -17vh;
+    border: 4px solid white;
+    box-shadow:0px 10px 6px 1px lightgray ;
+}
+.about .para{
+    width: 900px;
+    color: gray;
+    font-family: 'Oxygen', sans-serif;
+    margin: auto;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+section {
+    width: 100%;
+    /*height: 75vh;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+.section-heading{
+    font-weight: 400;
+    color: #2857a4;
+}
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+.skills-display {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-progress {
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.skill-progress > div {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+/* setting background-color */
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+
+
+/*Percentage Classes */
+
+.eighty-five-percent {
+    height: inherit;
+    width: 85%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+}
+.proj-div{
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.projsub img{
+    height: 200px;
+    width: 200px;
+}
+.contact{
+    color: white;
+    background-image: linear-gradient(50deg,#2857a4, #403066);
+
+}
+.con-head span{
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#contact-container{
+    display: flex;
+}
+#contact-form{
+    margin-left: 20%;
+}
+.my-info{
+    width: 35%;
+    margin-left: 5%;
+}
+.my-info h2{
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+#contact-form-container{
+    width: 50%;
+}
+.sub-p{
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+.my-details-info-container{
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+.my-details-info-container i{
+    color: white;
+}
+#contact-form input, textarea{
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    color: #d9dcdd;
+    background: transparent;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+#contact-form button[type="submit"]{
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.timeline{
+    position: relative;
+    width: 75%;
+    
+}
+.timeline-box{
+    position: relative;
+    min-height: 150px;
+    left: 5%;
+    width: 40%;
+    border: 2px solid black;
+    margin: 5px;
+}
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+.timeline-div{
+    position: absolute;
+    width: 0;
+    height: 75%;
+    border: 2px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+}
+.plane{
+    transform: rotate(180deg);
+    position: sticky;
+    top: 25%;
+    z-index: 2;
+}
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: lightgray;
+    top: 38%;
+    right: -13% ;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: lightgray;
+    top: 38%;
+    left: -10% ;
+    z-index: 1;
+}
+.edu-tim{
+    position: relative;
+    width: 75%;
+
+}
+.edu-box{
+    position: relative;
+    min-height: 150px;
+    left: 5%;
+    width: 40%;
+    border: 2px solid black;
+    margin: 5px;
+}
